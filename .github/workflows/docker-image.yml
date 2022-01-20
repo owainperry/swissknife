@@ -31,8 +31,6 @@ jobs:
         # generate Docker tags based on the following events/attributes
         tags: |
           type=semver,pattern=1.0.{{ github.run_number }}
-          type=semver,pattern=1
-          type=sha
 
     - name: Build and push Docker image
       uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
