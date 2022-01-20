@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sk
+  namespace: default
+spec:
+  containers:
+  - name: sk
+    image: owainperry/swissknife:1.0.6
